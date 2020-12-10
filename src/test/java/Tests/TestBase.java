@@ -46,13 +46,14 @@ public class TestBase
 		driver.navigate().to("https://app-dev.postscanmail.com/registration?plan=4241&store=6&address=1004");
 	}
 
-	@AfterClass (enabled = false)
+	@AfterClass
 	public void StopDriver()
 	{
 		driver.quit();
 	}
 
-	@AfterMethod (enabled = false)
+	//take screenshot in failure
+	@AfterMethod
 	public void TakeScreenShotOnFailur(ITestResult Result) throws IOException
 	{
 		if(Result.getStatus() == ITestResult.FAILURE)

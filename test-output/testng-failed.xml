@@ -7,7 +7,7 @@
         <methods>
           <include name="StopDriver"/>
           <include name="OpenDriver"/>
-          <include name="UserCanRegisterSuccessfully" invocation-numbers="1 2"/>
+          <include name="UserCanRegisterSuccessfully" invocation-numbers="0"/>
           <include name="TakeScreenShotOnFailur"/>
         </methods>
       </class> <!-- Tests.RegistrationTest -->

@@ -61,19 +61,23 @@ public class RegistrationPage extends PageBase
 
 
 	//Find elements in final page 
+	//locate  Successful Msg
 	@FindBy (xpath = "//h2[@class='ng-tns-c54-6']")
 	public WebElement SuccessfulRegistrationMSGTxt;
 
+	//locate  Go to mail box button
 	@FindBy (xpath = "//button[@class='btn-blue ng-tns-c54-6']")
 	WebElement TakeMailBoxBTNBtn;
 	
+	//locate  Inbox button
 	@FindBy(xpath = "//a[@class='ng-tns-c90-35 active']")
 	public WebElement InboxBtn;
 	
-	//mailbox element
+	// locate the more information three dots 
 	@FindBy(xpath = "//span[@class='truncate']")
 	public WebElement MoreInfoBtn;
 	
+	// locate log out button
 	@FindBy(xpath = "//button[@class='btn-blue']")
 	public WebElement LogOutBtn;
 
